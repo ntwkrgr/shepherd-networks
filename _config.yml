@@ -1,0 +1,18 @@
+title: Shepherd Networks
+description: >-
+  Professional network consulting services in San Angelo, TX.
+  Specializing in new construction network design, wireless networks,
+  optimization, troubleshooting, and security camera systems.
+baseurl: ""
+url: ""
+
+markdown: kramdown
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
