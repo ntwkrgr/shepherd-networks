@@ -222,6 +222,13 @@ img {
 .card-icon {
   font-size: 2.5rem;
   margin-bottom: 1rem;
+  color: var(--primary);
+}
+
+.card-icon svg {
+  width: 48px;
+  height: 48px;
+  stroke: var(--primary);
 }
 
 .card h3 {
@@ -253,6 +260,14 @@ img {
   font-size: 1.75rem;
   flex-shrink: 0;
   color: var(--accent);
+  width: 32px;
+  height: 32px;
+}
+
+.feature-icon svg {
+  width: 32px;
+  height: 32px;
+  stroke: var(--accent);
 }
 
 .feature h3 {
@@ -348,6 +363,14 @@ img {
   font-size: 1.3rem;
   flex-shrink: 0;
   color: var(--accent);
+  width: 24px;
+  height: 24px;
+}
+
+.contact-detail-icon svg {
+  width: 24px;
+  height: 24px;
+  stroke: var(--accent);
 }
 
 .contact-form h2 {
@@ -487,7 +510,20 @@ img {
   margin-bottom: 0.75rem;
   padding-bottom: 0.5rem;
   border-bottom: 2px solid var(--accent);
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.service-icon {
+  display: inline-flex;
+  align-items: center;
+}
+
+.service-icon svg {
+  width: 28px;
+  height: 28px;
+  stroke: var(--primary);
 }
 
 .service-detail p {
