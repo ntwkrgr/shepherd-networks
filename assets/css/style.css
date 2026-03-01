@@ -88,9 +88,6 @@ img {
   height: 80px;
 }
 
-/* Logo — mix-blend-mode: screen removes dark areas against dark bg,
-   keeps light/bright areas visible. White areas in the PNG become
-   bright white on the navy background. */
 .site-logo {
   display: flex;
   align-items: center;
@@ -103,9 +100,8 @@ img {
 }
 
 .logo-img {
-  height: 72px;
+  height: 48px;
   width: auto;
-  mix-blend-mode: screen;
 }
 
 /* Hamburger */
@@ -356,7 +352,8 @@ img {
 .service-card-icon svg {
   width: 26px;
   height: 26px;
-  stroke: var(--primary);
+  color: var(--primary);
+  flex-shrink: 0;
 }
 
 .service-card h3 {
@@ -415,9 +412,10 @@ img {
 }
 
 .feature-box-icon svg {
-  width: 34px;
-  height: 34px;
-  stroke: #fff;
+  width: 32px;
+  height: 32px;
+  color: #fff;
+  flex-shrink: 0;
 }
 
 .feature-box h3 {
@@ -534,7 +532,7 @@ img {
 .contact-detail-icon svg {
   width: 20px;
   height: 20px;
-  stroke: var(--accent);
+  color: var(--accent);
 }
 
 .contact-detail strong {
@@ -568,7 +566,7 @@ img {
 .consult-note svg {
   width: 18px;
   height: 18px;
-  stroke: var(--accent);
+  color: var(--accent);
   flex-shrink: 0;
 }
 
@@ -676,14 +674,13 @@ img {
   padding-bottom: 2.5rem;
 }
 
-/* Footer logo — mix-blend-mode: screen removes dark areas on dark bg,
-   keeps the light/white outline of the logo visible */
+/* Footer logo — invert() flips black outline to white (visible on dark bg)
+   and turns the white canvas to black (invisible on dark bg). */
 .footer-logo-img {
-  height: 80px;
+  height: 52px;
   width: auto;
-  mix-blend-mode: screen;
+  filter: invert(1);
   margin-bottom: 0.75rem;
-  opacity: 0.9;
 }
 
 .footer-brand p {
@@ -811,7 +808,7 @@ img {
   }
 
   .logo-img {
-    height: 56px;
+    height: 38px;
   }
 
   .hero h1 {
