@@ -102,6 +102,8 @@ img {
 .logo-img {
   height: 48px;
   width: auto;
+  /* brighten so the gray dog and dark navy text are legible on the dark header */
+  filter: brightness(1.8);
 }
 
 /* Hamburger */
