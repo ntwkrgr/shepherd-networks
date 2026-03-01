@@ -102,8 +102,7 @@ img {
 .logo-img {
   height: 48px;
   width: auto;
-  /* brighten so the gray dog and dark navy text are legible on the dark header */
-  filter: brightness(1.8);
+  color: #fff;
 }
 
 /* Hamburger */
@@ -182,6 +181,14 @@ img {
 .hero .container {
   text-align: center;
   max-width: 800px;
+}
+
+.hero-logo {
+  max-width: 340px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto 2rem;
+  display: block;
 }
 
 .hero h1 {
@@ -811,6 +818,10 @@ img {
 
   .logo-img {
     height: 38px;
+  }
+
+  .hero-logo {
+    max-width: 260px;
   }
 
   .hero h1 {
