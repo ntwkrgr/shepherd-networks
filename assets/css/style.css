@@ -195,16 +195,18 @@ img {
   max-width: 800px;
 }
 
-.hero-logo {
+.brand-logo {
   max-width: 340px;
   width: 100%;
   height: auto;
-  margin: 0 auto 2rem;
+  margin: 0 auto;
   display: block;
-  filter: drop-shadow(0 0 24px rgba(255, 255, 255, 0.35)) drop-shadow(0 0 48px rgba(255, 255, 255, 0.15));
-  background: radial-gradient(ellipse, rgba(255, 255, 255, 0.18) 0%, transparent 70%);
-  padding: 1.5rem;
-  border-radius: 16px;
+}
+
+.logo-band {
+  background: var(--bg);
+  text-align: center;
+  padding: 3rem 0;
 }
 
 .hero h1 {
@@ -838,7 +840,7 @@ img {
     font-size: 0.78rem;
   }
 
-  .hero-logo {
+  .brand-logo {
     max-width: 260px;
   }
 
