@@ -1,137 +1,409 @@
 ---
 layout: default
 title: Home
-description: Shepherd Networks provides professional network consulting services in San Angelo, TX. New construction network design, wireless networks, and security camera systems.
+description: Shepherd Networks provides professional network consulting services in San Angelo, TX. New construction network design, wireless networks, security camera systems, monitoring, and DNS security.
 ---
 
-<section class="hero">
-  <div class="container">
-    <h1>Network Consulting for San Angelo</h1>
-    <p>Professional network design, wireless solutions, and security camera systems tailored for homes and businesses in the San Angelo area.</p>
-    <div class="hero-buttons">
-      <a href="{{ '/services' | relative_url }}" class="btn btn-primary">Our Services</a>
-      <a href="{{ '/contact' | relative_url }}" class="btn btn-outline">Get in Touch</a>
+<!-- ==============================
+     HERO
+============================== -->
+<section id="home" class="hero">
+  <div class="hero-inner">
+    <div class="container">
+      <h1>Network Consulting<br>for San Angelo</h1>
+      <p>Professional network design, wireless solutions, security camera systems, and ongoing managed services — tailored for homes and businesses in the Concho Valley.</p>
+      <div class="hero-buttons">
+        <a href="#services" class="btn btn-accent">Our Services</a>
+        <a href="#contact" class="btn btn-outline">Get in Touch</a>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="section section-light">
+<!-- ==============================
+     SERVICES
+============================== -->
+<section id="services" class="section section-light">
   <div class="container">
-    <h2 class="section-title">What We Do</h2>
+    <h2 class="section-title">Our Services</h2>
     <p class="section-subtitle">Expert network consulting services for residential and commercial clients</p>
-    <div class="card-grid">
-      <div class="card">
-        <div class="card-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M2 20h20"/>
-            <path d="M5 20v-8h4v8"/>
-            <path d="M13 20v-12h4v12"/>
-            <path d="M10 8l4-4 4 4"/>
-            <path d="M14 4v4"/>
-          </svg>
+
+    <div class="service-grid">
+
+      <!-- Bundle -->
+      <div class="service-card featured">
+        <div class="service-card-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
         </div>
-        <h3>New Construction Network Design</h3>
-        <p>Structured cabling plans and network infrastructure designed for new homes and commercial buildings from the ground up.</p>
+        <div class="service-card-badge">Best Value</div>
+        <h3>Network Performance &amp; Security Bundle</h3>
+        <p>Monitoring + DNS Security + 1 hour remote support/month. Know the moment something goes wrong and block malicious traffic before it reaches your devices.</p>
+        <div class="service-card-price">$150<span>/mo</span></div>
       </div>
-      <div class="card">
-        <div class="card-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M5 12.55a11 11 0 0 1 14 0"/>
-            <path d="M1.5 8.55a16 16 0 0 1 21 0"/>
-            <path d="M8.5 16.55a5 5 0 0 1 7 0"/>
-            <circle cx="12" cy="20" r="1"/>
-          </svg>
+
+      <!-- Monitoring -->
+      <div class="service-card">
+        <div class="service-card-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/><circle cx="12" cy="10" r="2"/><path d="M12 8v-1"/><path d="M12 14v-1"/><path d="M10.27 9l-.87-.5"/><path d="M14.6 14.5l-.87-.5"/><path d="M9 11H8"/><path d="M16 11h-1"/><path d="M10.27 13l-.87.5"/><path d="M14.6 8.5l-.87.5"/></svg>
+        </div>
+        <h3>Network Monitoring</h3>
+        <p>Around-the-clock availability and wireless performance monitoring with proactive alerts and monthly health summaries. Best on UniFi hardware.</p>
+        <div class="service-card-price">$75<span>/mo</span></div>
+      </div>
+
+      <!-- DNS Security -->
+      <div class="service-card">
+        <div class="service-card-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3>DNS Security</h3>
+        <p>Blocks malicious domains, phishing sites, and malware delivery infrastructure at the network level — no software on individual devices required.</p>
+        <div class="service-card-price">$25<span>/mo</span></div>
+      </div>
+
+      <!-- Equipment Install -->
+      <div class="service-card">
+        <div class="service-card-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+        </div>
+        <h3>Equipment Installation &amp; Setup</h3>
+        <p>Physical installation and full configuration of switches, access points, and IP cameras — done right from day one. Switch $150 · AP $100 · Camera $100.</p>
+        <div class="service-card-price">Flat Rate</div>
+      </div>
+
+      <!-- New Construction -->
+      <div class="service-card">
+        <div class="service-card-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h20"/><path d="M5 20v-8h4v8"/><path d="M13 20v-12h4v12"/><path d="M10 8l4-4 4 4"/><path d="M14 4v4"/></svg>
+        </div>
+        <h3>New Construction &amp; Remodel Design</h3>
+        <p>Structured cabling plans, ethernet drop placement, equipment rack planning, and builder coordination — designed before the walls go up.</p>
+        <div class="service-card-price">$500–$1,500</div>
+      </div>
+
+      <!-- Wireless -->
+      <div class="service-card">
+        <div class="service-card-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14 0"/><path d="M1.5 8.55a16 16 0 0 1 21 0"/><path d="M8.5 16.55a5 5 0 0 1 7 0"/><circle cx="12" cy="20" r="1"/></svg>
         </div>
         <h3>Wireless Network Design</h3>
-        <p>Custom wireless solutions that deliver reliable coverage and performance throughout your property.</p>
+        <p>Site surveys, access point placement, equipment selection, and VLAN planning for reliable whole-home or commercial wireless coverage.</p>
+        <div class="service-card-price">$95<span>/hr</span></div>
       </div>
-      <div class="card">
-        <div class="card-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
-          </svg>
+
+      <!-- Troubleshooting -->
+      <div class="service-card">
+        <div class="service-card-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
         </div>
-        <h3>Optimization &amp; Troubleshooting</h3>
-        <p>Diagnose and resolve network issues, improve speeds, and optimize your existing network infrastructure.</p>
+        <h3>Troubleshooting &amp; Optimization</h3>
+        <p>Diagnose root causes, eliminate dead zones, optimize speeds, tune QoS, and audit security — your network back to full performance.</p>
+        <div class="service-card-price">$95<span>/hr</span></div>
       </div>
-      <div class="card">
-        <div class="card-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
-            <circle cx="12" cy="13" r="4"/>
-          </svg>
+
+      <!-- Security Cameras -->
+      <div class="service-card">
+        <div class="service-card-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
         </div>
-        <h3>Security Camera Systems</h3>
-        <p>Consulting and design for IP security camera systems, including camera placement, recording, and remote access.</p>
+        <h3>Security Camera Consulting &amp; Design</h3>
+        <p>Camera placement planning, IP system design, NVR/DVR selection, remote viewing setup, and integration with your existing network.</p>
+        <div class="service-card-price">$95<span>/hr</span></div>
       </div>
-    </div>
+
+    </div><!-- .service-grid -->
   </div>
 </section>
 
-<section class="section">
+<!-- ==============================
+     WHY SHEPHERD
+============================== -->
+<section id="why-us" class="section">
   <div class="container">
     <h2 class="section-title">Why Shepherd Networks?</h2>
-    <p class="section-subtitle">Local expertise you can count on</p>
-    <div class="features-list">
-      <div class="feature">
-        <div class="feature-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-            <circle cx="12" cy="10" r="3"/>
-          </svg>
+    <p class="section-subtitle">Local expertise with a vendor-neutral approach</p>
+    <div class="features-grid">
+
+      <div class="feature-box">
+        <div class="feature-box-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
         </div>
-        <div>
-          <h3>San Angelo Local</h3>
-          <p>We know the area and are invested in our community. On-site consultations are just a short drive away.</p>
-        </div>
+        <h3>San Angelo Local</h3>
+        <p>We know the area and are invested in our community. On-site consultations throughout the Concho Valley — San Angelo, Wall, Christoval, Miles, Ballinger, and beyond.</p>
       </div>
-      <div class="feature">
-        <div class="feature-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="12" r="10"/>
-            <circle cx="12" cy="12" r="6"/>
-            <circle cx="12" cy="12" r="2"/>
-          </svg>
+
+      <div class="feature-box">
+        <div class="feature-box-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
         </div>
-        <div>
-          <h3>Tailored Solutions</h3>
-          <p>Every project is unique. We design solutions that match your specific needs, space, and budget.</p>
-        </div>
+        <h3>Tailored Solutions</h3>
+        <p>Every project is unique. We design solutions that match your specific needs, space, and budget — not a pre-packaged one-size-fits-all plan.</p>
       </div>
-      <div class="feature">
-        <div class="feature-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-            <polyline points="9 12 11 14 15 10"/>
-          </svg>
+
+      <div class="feature-box">
+        <div class="feature-box-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
         </div>
-        <div>
-          <h3>Vendor-Neutral Advice</h3>
-          <p>We recommend the best products for your situation, not the ones that earn us the highest commission.</p>
-        </div>
+        <h3>Vendor-Neutral Advice</h3>
+        <p>We recommend the best products for your situation, not the ones that earn us the highest commission. Our only incentive is your satisfaction.</p>
       </div>
-      <div class="feature">
-        <div class="feature-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-            <circle cx="9" cy="7" r="4"/>
-            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-          </svg>
+
+      <div class="feature-box">
+        <div class="feature-box-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
         </div>
-        <div>
-          <h3>Clear Communication</h3>
-          <p>We explain technical details in plain language so you can make informed decisions with confidence.</p>
-        </div>
+        <h3>Clear Communication</h3>
+        <p>We explain technical details in plain language so you can make informed decisions with confidence — no jargon, no confusion.</p>
       </div>
+
     </div>
   </div>
 </section>
 
+<!-- ==============================
+     RATES
+============================== -->
+<section id="rates" class="section section-light">
+  <div class="container">
+    <h2 class="section-title">Transparent Pricing</h2>
+    <p class="section-subtitle">Straightforward rates — no surprise bills. Equipment costs are not included in installation flat rates.</p>
+
+    <div class="rates-section">
+      <h3 class="rates-group-title">Recurring Monthly Services</h3>
+      <table class="rates-table">
+        <thead>
+          <tr>
+            <th>Service</th>
+            <th>Rate</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <strong>Network Performance &amp; Security Bundle</strong><br>
+              <span class="table-note">Monitoring + DNS Security + 1 hr remote support/mo</span>
+            </td>
+            <td><strong class="price-highlight">$150/mo</strong></td>
+            <td class="table-note">Best value. Support hour does not roll over. Preferred on UniFi hardware.</td>
+          </tr>
+          <tr>
+            <td>
+              <strong>Network Monitoring</strong><br>
+              <span class="table-note">Availability tracking, wireless metrics, proactive alerts</span>
+            </td>
+            <td>$75/mo</td>
+            <td class="table-note">Best on UniFi. Compatible with other platforms — ask about your setup.</td>
+          </tr>
+          <tr>
+            <td>
+              <strong>DNS Security</strong><br>
+              <span class="table-note">Managed secure DNS with custom filtering rules</span>
+            </td>
+            <td>$25/mo</td>
+            <td class="table-note">Via NextDNS or UniFi Shield (requires UniFi Dream Machine/Dream Router).</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="rates-section">
+      <h3 class="rates-group-title">On-Site Services</h3>
+      <table class="rates-table">
+        <thead>
+          <tr>
+            <th>Service</th>
+            <th>Rate</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <strong>On-Site Troubleshooting &amp; Consulting</strong><br>
+              <span class="table-note">Diagnostics, configuration, performance tuning</span>
+            </td>
+            <td>$95/hr</td>
+            <td class="table-note">2-hour minimum.</td>
+          </tr>
+          <tr>
+            <td>
+              <strong>Managed Switch Installation &amp; Setup</strong><br>
+              <span class="table-note">Physical install, config, VLAN setup, network integration</span>
+            </td>
+            <td>$150 flat</td>
+            <td class="table-note">Equipment not included.</td>
+          </tr>
+          <tr>
+            <td>
+              <strong>Access Point Installation &amp; Setup</strong><br>
+              <span class="table-note">Mount, cable, configure, integrate into wireless network</span>
+            </td>
+            <td>$100 flat</td>
+            <td class="table-note">Equipment not included. Per AP.</td>
+          </tr>
+          <tr>
+            <td>
+              <strong>IP Camera Installation &amp; Setup</strong><br>
+              <span class="table-note">Mount, cable, configure, integrate into camera system</span>
+            </td>
+            <td>$100 flat</td>
+            <td class="table-note">Equipment not included. Per camera.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="rates-section">
+      <h3 class="rates-group-title">Project Work</h3>
+      <table class="rates-table">
+        <thead>
+          <tr>
+            <th>Service</th>
+            <th>Rate</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <strong>Network Design — New Construction or Remodel</strong><br>
+              <span class="table-note">Floor plan, cable routing, AP/camera/switch placement, equipment list</span>
+            </td>
+            <td>$500–$1,500</td>
+            <td class="table-note">Flat rate, scope-dependent. Contact for a quote.</td>
+          </tr>
+          <tr>
+            <td>
+              <strong>Project Management</strong><br>
+              <span class="table-note">Subcontractor coordination, builder liaison, scheduling</span>
+            </td>
+            <td>15–20% of project cost</td>
+            <td class="table-note">For multi-phase or subcontracted projects.</td>
+          </tr>
+          <tr>
+            <td>
+              <strong>WiFi Site Survey</strong><br>
+              <span class="table-note">Pre-install heat mapping, coverage analysis, written report</span>
+            </td>
+            <td>$200–$400</td>
+            <td class="table-note">Flat rate, size-dependent.</td>
+          </tr>
+          <tr>
+            <td>
+              <strong>Initial Consultation</strong><br>
+              <span class="table-note">On-site or virtual meeting to discuss your project</span>
+            </td>
+            <td><strong class="price-highlight">Free</strong></td>
+            <td class="table-note"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="rates-disclaimer">Rates are for the San Angelo metro area. Travel fees may apply for locations outside the immediate area. An estimate will be provided before any billable work begins. We accept credit/debit cards, check, cash, or electronic transfer.</p>
+
+  </div>
+</section>
+
+<!-- ==============================
+     CONTACT
+============================== -->
+<section id="contact" class="section">
+  <div class="container">
+    <h2 class="section-title">Get in Touch</h2>
+    <p class="section-subtitle">Have a question or want to discuss a project? We'd love to hear from you.</p>
+
+    <div class="contact-grid">
+
+      <div class="contact-info">
+        <div class="contact-detail">
+          <span class="contact-detail-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </span>
+          <div>
+            <strong>Location</strong><br>
+            San Angelo, TX<br>
+            <span class="text-light">Serving the Concho Valley and surrounding area</span>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <span class="contact-detail-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </span>
+          <div>
+            <strong>Email</strong><br>
+            <a href="mailto:info@shepherdnetworks.com">info@shepherdnetworks.com</a>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <span class="contact-detail-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </span>
+          <div>
+            <strong>Hours</strong><br>
+            Monday – Friday: 8:00 AM – 6:00 PM<br>
+            Saturday: By appointment<br>
+            Sunday: Closed
+          </div>
+        </div>
+
+        <div class="consult-note">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          <span>Initial consultations are always <strong>free</strong>.</span>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <form action="https://formspree.io/f/placeholder" method="POST">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required placeholder="Your name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="your@email.com">
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone <span class="optional">(optional)</span></label>
+            <input type="tel" id="phone" name="phone" placeholder="(325) 000-0000">
+          </div>
+          <div class="form-group">
+            <label for="service">Service Interested In</label>
+            <select id="service" name="service">
+              <option value="">Select a service...</option>
+              <option value="bundle">Network Performance &amp; Security Bundle</option>
+              <option value="monitoring">Network Monitoring</option>
+              <option value="dns">DNS Security</option>
+              <option value="install">Equipment Installation</option>
+              <option value="new-construction">New Construction Network Design</option>
+              <option value="wireless">Wireless Network Design</option>
+              <option value="optimization">Troubleshooting &amp; Optimization</option>
+              <option value="security-cameras">Security Camera Systems</option>
+              <option value="other">Other / Not Sure</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required placeholder="Tell us about your project or question..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-accent btn-full">Send Message</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ==============================
+     CTA BAND
+============================== -->
 <section class="cta-band">
   <div class="container">
     <h2>Ready to Get Started?</h2>
-    <p>Contact us today for a consultation on your network project.</p>
-    <a href="{{ '/contact' | relative_url }}" class="btn btn-primary">Contact Us</a>
+    <p>Your initial consultation is free. Let's talk about your network project.</p>
+    <a href="#contact" class="btn btn-accent">Contact Us Today</a>
   </div>
 </section>

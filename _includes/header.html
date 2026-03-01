@@ -1,15 +1,19 @@
-<header class="site-header">
+<header class="site-header" id="site-header">
   <div class="container">
-    <a href="{{ '/' | relative_url }}" class="site-logo">
+    <a href="#home" class="site-logo">
       <img src="{{ '/shepherd-final.png' | relative_url }}" alt="Shepherd Networks" class="logo-img">
     </a>
     <nav class="site-nav">
-      <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
-      <ul class="nav-links">
-        <li><a href="{{ '/' | relative_url }}"{% if page.url == '/' %} class="active"{% endif %}>Home</a></li>
-        <li><a href="{{ '/services' | relative_url }}"{% if page.url == '/services/' or page.url == '/services' %} class="active"{% endif %}>Services</a></li>
-        <li><a href="{{ '/rates' | relative_url }}"{% if page.url == '/rates/' or page.url == '/rates' %} class="active"{% endif %}>Rates</a></li>
-        <li><a href="{{ '/contact' | relative_url }}"{% if page.url == '/contact/' or page.url == '/contact' %} class="active"{% endif %}>Contact</a></li>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link" data-section="home">Home</a></li>
+        <li><a href="#services" class="nav-link" data-section="services">Services</a></li>
+        <li><a href="#rates" class="nav-link" data-section="rates">Rates</a></li>
+        <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
       </ul>
     </nav>
   </div>
