@@ -683,12 +683,9 @@ img {
   padding-bottom: 2.5rem;
 }
 
-/* Footer logo — invert() flips black outline to white (visible on dark bg)
-   and turns the white canvas to black (invisible on dark bg). */
 .footer-logo-img {
   height: 52px;
   width: auto;
-  filter: invert(1);
   margin-bottom: 0.75rem;
 }
 
