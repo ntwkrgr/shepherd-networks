@@ -112,11 +112,6 @@ img {
   color: #fff;
 }
 
-.btn-contact-header {
-  padding: 0.45rem 1.2rem;
-  font-size: 0.85rem;
-}
-
 /* Hamburger */
 .nav-toggle {
   display: none;
@@ -833,11 +828,6 @@ img {
 
   .logo-img {
     height: 38px;
-  }
-
-  .btn-contact-header {
-    padding: 0.35rem 0.8rem;
-    font-size: 0.78rem;
   }
 
   .brand-logo {
