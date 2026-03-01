@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
+  if (window.lucide) { lucide.createIcons(); }
+
   var header = document.getElementById("site-header");
   var toggle = document.querySelector(".nav-toggle");
   var navLinks = document.getElementById("nav-links");
