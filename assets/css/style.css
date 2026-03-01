@@ -88,6 +88,13 @@ img {
   height: 80px;
 }
 
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-shrink: 0;
+}
+
 .site-logo {
   display: flex;
   align-items: center;
@@ -103,6 +110,11 @@ img {
   height: 48px;
   width: auto;
   color: #fff;
+}
+
+.btn-contact-header {
+  padding: 0.45rem 1.2rem;
+  font-size: 0.85rem;
 }
 
 /* Hamburger */
@@ -189,6 +201,10 @@ img {
   height: auto;
   margin: 0 auto 2rem;
   display: block;
+  filter: drop-shadow(0 0 24px rgba(255, 255, 255, 0.35)) drop-shadow(0 0 48px rgba(255, 255, 255, 0.15));
+  background: radial-gradient(ellipse, rgba(255, 255, 255, 0.18) 0%, transparent 70%);
+  padding: 1.5rem;
+  border-radius: 16px;
 }
 
 .hero h1 {
@@ -815,6 +831,11 @@ img {
 
   .logo-img {
     height: 38px;
+  }
+
+  .btn-contact-header {
+    padding: 0.35rem 0.8rem;
+    font-size: 0.78rem;
   }
 
   .hero-logo {
