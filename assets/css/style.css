@@ -459,22 +459,24 @@ img {
 .owner-bios {
   display: flex;
   gap: 2rem;
-  max-width: 960px;
+  max-width: 1100px;
   margin: 0 auto;
-  flex-wrap: wrap;
   justify-content: center;
+  align-items: flex-start;
 }
 
 .owner-bio {
   display: flex;
-  align-items: flex-start;
-  gap: 2rem;
-  flex: 1 1 420px;
-  max-width: 460px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.25rem;
+  flex: 1 1 0;
+  max-width: 500px;
   padding: 2rem;
   background: var(--bg);
   border-radius: var(--radius);
-  border-left: 4px solid var(--accent);
+  border-top: 4px solid var(--accent);
 }
 
 .owner-bio-photo img {
@@ -913,10 +915,13 @@ img {
     margin: 0 auto 0.75rem;
   }
 
-  .owner-bio {
+  .owner-bios {
     flex-direction: column;
     align-items: center;
-    text-align: center;
+  }
+
+  .owner-bio {
+    max-width: 100%;
   }
 }
 
