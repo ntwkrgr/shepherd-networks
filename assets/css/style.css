@@ -454,6 +454,63 @@ img {
 }
 
 /* ============================================================
+   OWNER BIO
+   ============================================================ */
+.owner-bio {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: var(--bg);
+  border-radius: var(--radius);
+  border-left: 4px solid var(--accent);
+}
+
+.owner-bio-photo img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--accent);
+  flex-shrink: 0;
+}
+
+.owner-bio-content h3 {
+  font-size: 1.1rem;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.owner-bio-content p {
+  color: var(--text-light);
+  font-size: 0.92rem;
+  line-height: 1.65;
+  margin-bottom: 0.75rem;
+}
+
+.owner-linkedin {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--accent);
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+.owner-linkedin:hover {
+  color: var(--accent-dark);
+}
+
+.owner-linkedin svg {
+  flex-shrink: 0;
+}
+
+/* ============================================================
    RATES
    ============================================================ */
 .rates-section {
@@ -642,6 +699,30 @@ img {
 .form-group textarea {
   min-height: 130px;
   resize: vertical;
+}
+
+.form-success {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.form-success svg {
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+.form-success h3 {
+  color: var(--primary);
+  margin-bottom: 0.75rem;
+}
+
+.form-success p {
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+.form-success a {
+  color: var(--accent);
 }
 
 /* ============================================================
