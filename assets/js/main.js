@@ -58,6 +58,40 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+  // ── Contact Form → mailto handler ──────────────────────────
+  var contactForm = document.getElementById("contact-form");
+  if (contactForm) {
+    contactForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      var name = contactForm.querySelector("#name").value;
+      var email = contactForm.querySelector("#email").value;
+      var phone = contactForm.querySelector("#phone").value;
+      var serviceEl = contactForm.querySelector("#service");
+      var serviceText = serviceEl.selectedIndex > 0
+        ? serviceEl.options[serviceEl.selectedIndex].text
+        : "";
+      var message = contactForm.querySelector("#message").value;
+
+      var subject = "Contact Form Submission from " + name;
+      var body = "Name: " + name + "\n" +
+                 "Email: " + email + "\n" +
+                 (phone ? "Phone: " + phone + "\n" : "") +
+                 (serviceText ? "Service: " + serviceText + "\n" : "") +
+                 "\nMessage:\n" + message;
+
+      window.location.href = "mailto:info@shepherdnetworks.com" +
+        "?subject=" + encodeURIComponent(subject) +
+        "&body=" + encodeURIComponent(body);
+
+      var successMsg = document.getElementById("form-success");
+      if (successMsg) {
+        contactForm.style.display = "none";
+        successMsg.style.display = "block";
+      }
+    });
+  }
+
   // ── Smooth scroll polyfill for anchor links ───────────────
   // (Most modern browsers support scroll-behavior: smooth in CSS,
   //  but this ensures the header offset is respected for JS clicks)

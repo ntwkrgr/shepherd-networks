@@ -644,6 +644,30 @@ img {
   resize: vertical;
 }
 
+.form-success {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.form-success svg {
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+.form-success h3 {
+  color: var(--primary);
+  margin-bottom: 0.75rem;
+}
+
+.form-success p {
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+.form-success a {
+  color: var(--accent);
+}
+
 /* ============================================================
    CTA BAND
    ============================================================ */
