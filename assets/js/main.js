@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
       var email = contactForm.querySelector("#email").value;
       var phone = contactForm.querySelector("#phone").value;
       var serviceEl = contactForm.querySelector("#service");
-      var serviceText = serviceEl.selectedIndex > 0
+      var serviceText = serviceEl && serviceEl.selectedIndex > 0
         ? serviceEl.options[serviceEl.selectedIndex].text
         : "";
       var message = contactForm.querySelector("#message").value;
