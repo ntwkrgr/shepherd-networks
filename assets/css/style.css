@@ -459,22 +459,22 @@ img {
 .owner-bio {
   display: flex;
   align-items: flex-start;
-  gap: 1.5rem;
-  margin-top: 3.5rem;
+  gap: 2rem;
+  max-width: 720px;
+  margin: 0 auto;
   padding: 2rem;
-  background: var(--bg-light);
+  background: var(--bg);
   border-radius: var(--radius);
   border-left: 4px solid var(--accent);
 }
 
-.owner-bio-icon {
+.owner-bio-photo img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--accent);
   flex-shrink: 0;
-}
-
-.owner-bio-icon svg {
-  width: 48px;
-  height: 48px;
-  color: var(--accent);
 }
 
 .owner-bio-content h3 {
