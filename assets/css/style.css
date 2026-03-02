@@ -752,6 +752,37 @@ img {
 }
 
 /* ============================================================
+   TESTIMONIAL
+   ============================================================ */
+.testimonial-card {
+  max-width: 720px;
+  margin: 0 auto;
+  background: var(--bg-light);
+  border-left: 4px solid var(--accent);
+  border-radius: var(--radius);
+  padding: 2rem 2.5rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.testimonial-quote {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: var(--text);
+  font-style: italic;
+  margin: 0 0 1.25rem;
+}
+
+.testimonial-attribution {
+  font-size: 0.92rem;
+  color: var(--text-light);
+}
+
+.testimonial-attribution strong {
+  color: var(--primary);
+  font-style: normal;
+}
+
+/* ============================================================
    CTA BAND
    ============================================================ */
 .cta-band {
