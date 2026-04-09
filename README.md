@@ -48,6 +48,11 @@ The site will be available at `http://localhost:4000`.
 │   ├── css/           # Stylesheets
 │   ├── images/        # Logos and graphics
 │   └── js/            # JavaScript
+├── docs/
+│   ├── legal/         # Legal documents (MSA, privacy policy, ToS, NDA)
+│   ├── service-agreements/  # Per-service client agreements
+│   ├── service-notes/       # Internal service notes and SLA drafts
+│   └── templates/     # Invoice, quote, and assessment templates
 ├── index.html         # Main homepage
 ├── contact.html       # Contact page
 ├── services.html      # Services page
