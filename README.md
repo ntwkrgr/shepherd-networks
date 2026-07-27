@@ -26,17 +26,21 @@ Shepherd Networks provides expert network consulting services for residential an
 
 ### Prerequisites
 
-- [Ruby](https://www.ruby-lang.org/) (2.7+)
+- [Ruby](https://www.ruby-lang.org/) 3.3.11
 - [Bundler](https://bundler.io/)
 
 ### Setup
 
 ```bash
 bundle install
+bundle exec jekyll build
 bundle exec jekyll serve
 ```
 
 The site will be available at `http://localhost:4000`.
+
+Commit `Gemfile.lock` whenever dependencies change so local and GitHub Pages
+builds use the same dependency set.
 
 ## Project Structure
 
